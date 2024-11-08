@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <h1>Admission Form</h1>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+            <label for="education">Education:</label>
+            <select id="education" name="education" required>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="graduate">Graduate</option>
+            </select><br><br>
+
+            <label for="preparation">Preparation:</label>
+            <select id="preparation" name="preparation" required>
+                <option value="ssc">SSC</option>
+                <option value="railway">Railway</option>
+                <option value="upsc">UPSC</option>
+                <option value="bpsc">BPSC</option>
+                <option value="teaching">Teaching</option>
+                <option value="general">General</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
